@@ -12,121 +12,132 @@ a {
 ul {
   list-style-type: none;
 }
+
 img {
   max-width: 100%;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 body {
   color: white;
-  background: linear-gradient(150deg, #040735, #9e00ff);
-  background-size: 120% 120%;
-  font-family: "Poppins", sans-serif;
+  background-image: url('/imagens/photo-1539721972319-f0e80a00d424.avif');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0 auto;
   text-align: center;
-  max-width: 1120px;
+  max-width: 1008px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-
+  padding: 40px;
 }
 
 .logo {
-  
-  width: 65px;
-  height: 60px;
+  width: 60px;
+  height: 55px;
   border-radius: 50%;
   border: 2px solid white;
   text-align: center;
-  line-height: 57px;
-  font-family: "Raleway", sans-serif;
+  line-height: 50px;
   transition: 0.3s;
   position: fixed;
   top: 20px;
-  font-size: 24px;
-  
+  font-size: 22px;
+  z-index: 1000;
 }
 
-.sumir{
+.sumir {
   display: none;
-
 }
+
 header a:hover .logo {
-  color: #9e00ff;
-  border: 2px solid #9e00ff;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.1);
 }
 
 .menu li a {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 8px 16px;
   transition: 0.3s;
   border: 2px solid white;
   border-radius: 50px;
   position: relative;
-  right: 90px;
+  right: 80px;
 }
 
 .menu li a:hover {
-  color: #9e00ff;
-  border: 2px solid #9e00ff;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.1);
 }
 
 .home {
   display: flex;
-  min-height: calc(100vh - 165px);
+  min-height: calc(100vh - 140px);
   align-items: center;
-  gap: 50px;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .home .informacoes {
-  
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  letter-spacing: 2px;
-  padding: 0 15px;
-  max-width: 50%;
+  gap: 10px;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  max-width: 40%;
   justify-content: space-between;
   align-items: center;
 }
 
 .home .informacoes h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
 .home .informacoes p {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 8px;
   text-align: justify;
 }
 
+
 .home .redes-sociais {
-  
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
+
 .home .redes-sociais a i {
   border: 1px solid white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  font-size: 22px;
   transition: 0.2s;
 }
+
 .home .redes-sociais a i:hover {
-  color: #9e00ff;
-  border: 2px solid #9e00ff;
+  color: #fff;
+  border: 2px solid #fff;
   transform: scale(1.1);
 }
 
@@ -136,90 +147,99 @@ header a:hover .logo {
   border: 2px solid white;
 }
 
-
 .projetos h2 {
   text-align: center;
-  padding: 60px 0;
-  font-size: 45px;
+  padding: 50px 0;
+  font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .projetos .container-projetos {
-
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   justify-content: center;
-  margin-bottom: 100px;
 }
 
 .projetos .projeto {
-  max-width: 260px;
-  max-height: 300px;
+  max-width: 240px;
+  max-height: 280px;
   position: relative;
   display: none;
 }
+
 .projetos .projeto.ativo {
   display: block;
 }
 
 .projeto img {
-  object-fit: contain;  
-  width: 260px;
-  height: 300px;
-}
-.projetos .projeto h3{
-    background-color: #9e00ff;
-    width: 100%;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    position: absolute;
-    bottom: 0;
-}
-.projetos .projeto .informacoes-projeto{
-    background-color: black;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    font-weight: 600;
-    opacity: 0;
-    transition: 0.3s;
-    padding: 50px 20px;
-
+  object-fit: contain;
+  width: 240px;
+  height: 280px;
 }
 
-.projetos .container-projetos .projeto:hover .informacoes-projeto{
-    opacity: 0.7;
-    background-color: black;
-
+.projetos .projeto h3 {
+  background-color: #023062;
+  width: 100%;
+  padding-left: 18px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: absolute;
+  bottom: 0;
 }
 
-.projetos .btn-mostrar-mais-projetos{
-    background: none;
-    border: 1px solid white;
-    border-radius: 15px;
-    color: white;
-    width: 180px;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.projetos .projeto
+.informacoes-projeto {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 40px 18px;
 }
 
-.projetos .btn-mostrar-mais-projetos:hover{
-   background-color: blueviolet; 
-   transition: 0.3s;
+.projetos
+.container-projetos
+.projeto:hover
+.informacoes-projeto {
+  opacity: 1;
+  transition: 0.3s;
+  color: #023062;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.projetos .btn-mostrar-mais-projetos.remove{
+.projetos .btn-mostrar-mais-projetos {
+  background: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  width: 160px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projetos .btn-mostrar-mais-projetos:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.projetos .btn-mostrar-mais-projetos.remove {
   display: none;
-  
 }
