@@ -30,7 +30,7 @@
       text-align: center;
       align-items: center;
     }
-    .projetos .containter-projetos {
+    .projetos .container-projetos {
       padding: 0 30px;
     }
   }
@@ -230,6 +230,7 @@
   
       .projetos {
         padding: 30px;
+        padding-bottom: 220px;
       }
       .logo {
         position: static;
@@ -240,10 +241,9 @@
     }
     @media (max-width: 400px) {
       .projetos{
-        padding-bottom: 220px;
+        padding-bottom: 280px;
       }
       .projetos .projeto .informacoes-projeto {
-        
         height: auto;
     }
     }
