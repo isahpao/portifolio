@@ -133,6 +133,9 @@ header a:hover .logo {
   padding: 8px;
   font-size: 22px;
   transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .redes-sociais a i:hover {
