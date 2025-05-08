@@ -1,45 +1,249 @@
-@media(max-width:1280px) {
-    .cabecalho{
-        padding: 40px;
+/* De 1282px até 2560px: usa left: 20% */
+@media (min-width: 1600px) and (max-width: 2560px) {
+    .logo {
+      left: 20%;
     }
+  
     .home{
-        flex-direction: column;
-        align-items: center;
-        margin: 50px 0;
-        gap: 30px;
-
+      min-height: auto;
     }
-    .home .informacoes{
-        max-width: 80%;
-        text-align: center;
-        align-items: center;
-
+  }
+  
+  /* De 1160px até 1281px: usa left: 10% */
+  @media (min-width: 1160px) and (max-width: 1600px) {
+    .logo {
+      left: 3%;
+    }
+  }
+  
+  /* Telas até 1280px (ex: desktops pequenos) */
+  @media (max-width: 1280px) {
+    .cabecalho {
+      padding: 40px;
+    }
+    .home {
+      align-items: center;
+      margin: 50px 0;
+      gap: 30px;
+    }
+    .home .informacoes {
+      text-align: center;
+      align-items: center;
     }
     .projetos .containter-projetos {
-        padding: 0 30px;
-
+      padding: 0 30px;
     }
-}
-
-@media(max-width:425px) {
-    .home .informacoes h1{
-        font-size: 30px;
-
+  }
+  
+  /* Telas até 1024px (ex: tablets) */
+  @media (max-width: 1050px) {
+    header {
+      gap: 20px;
+      padding: 20px;
     }
-    .home .informacoes p{
-        font-size: 16px;
-
+    
+    .home {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 50px 100px;
     }
-    .foto img{
-        max-width: 320px;
+  
+    .home .informacoes {
+      max-width: 100%;
     }
-
-    .projetos {
-        padding: 30px;
-    }
+  
     .logo{
-        position: static;
+      left: 2%;
     }
+  
+    .habilidades{
+      margin: 50px 100px;
+    }
+  
+    .projetos{
+      margin: 50px 20px;
+    }
+  
+    .projetos .container-projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
+      justify-items: start;
+      align-items: center;
+    }
+  
+    .projetos .projeto .informacoes-projeto {
+      color: #023062;
+      background-color: rgba(255, 255, 255, 0.7);
+      background-blend-mode: overlay;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 240px;
+      width: 90%;
+      opacity: 1;
+      padding: 30px 8px;
+    }
+  
+    .projetos .projeto h3 {
+      border: #18599f 1px solid;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Telas até 768px (ex: celulares em landscape e tablets pequenos) */
+  @media (max-width: 990px) {
     .menu li a {
-        position: static;}
-}
+      font-size: 16px;
+      right: 0;
+      padding: 6px 12px;
+    }
+  
+    .home .container-foto img {
+      width: 200px;
+    }
+  
+    .habilidades .habilidade img {
+      width: 80px;
+    }
+  
+    .habilidades .habilidade h3 {
+      font-size: 14px;
+    }
+  
+    .projeto img {
+      height: 210px;
+    }
+  
+    .projetos .projeto h3 {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  
+    .projetos .container-projetos {
+      display: flex;
+      gap: 80px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      flex-direction: column;
+      align-items: stretch;
+      padding-left: 20px;
+    }
+  
+    .projetos .projeto .informacoes-projeto {
+      left: 350px;
+      height: 100%;
+    }
+  
+    .projetos .btn-mostrar-mais-projetos {
+      width: 150px;
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .projetos .projeto {
+      max-width: 300px;
+    }
+  }
+  
+  /* Telas até 480px (ex: celulares pequenos) */
+  @media (max-width: 480px) {
+    
+    .home .informacoes h1 {
+      font-size: 28px;
+    }
+  
+    .home, .habilidades{
+      margin: 20px 30px;
+    }
+  
+    .habilidades .container-habilidades{
+      justify-content: space-evenly;
+    }
+  
+    .habilidades .habilidade h3{
+      width: 100%;
+    }
+  
+    .logo{
+      position: absolute;
+      left: 10%;
+    }
+  
+    .home .informacoes p {
+      font-size: 14px;
+    }
+  
+    .home .redes-sociais a i {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  
+    .habilidades .container-habilidades{
+      align-items: center;
+    }
+  
+    .projeto img{
+      width: auto;
+    }
+  
+    .projetos{
+      padding-bottom: 220px;
+    }
+  
+    .projetos .container-projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      justify-items: center;
+      align-items: center;
+      gap: 210px;
+    }
+  
+    .projetos .projeto .informacoes-projeto {
+      left: 15px;
+      top: 192px;
+      height: auto;
+      z-index: -1;
+  }
+  
+    .projetos .btn-mostrar-mais-projetos {
+      width: 130px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+    @media (max-width: 425px) {
+      .home .informacoes h1 {
+        font-size: 30px;
+      }
+      .home .informacoes p {
+        font-size: 16px;
+      }
+      .foto img {
+        max-width: 320px;
+      }
+  
+      .projetos {
+        padding: 30px;
+      }
+      .logo {
+        position: static;
+      }
+      .menu li a {
+        position: static;
+      }
+    }
+    @media (max-width: 400px) {
+      .projetos{
+        padding-bottom: 220px;
+      }
+      .projetos .projeto .informacoes-projeto {
+        
+        height: auto;
+    }
+    }
