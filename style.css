@@ -176,6 +176,7 @@ header a:hover .logo {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .habilidades .habilidade {
   max-width: 240px;
@@ -300,7 +301,7 @@ header a:hover .logo {
 .projetos .btn-mostrar-mais-projetos {
   background: none;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 25px;
   color: white;
   width: 160px;
   padding: 16px;
@@ -317,6 +318,8 @@ header a:hover .logo {
 .projetos .btn-mostrar-mais-projetos:hover {
   background-color: #fff;
   transition: 0.3s;
+  color: #023062;
+  border: 1px solid #023062;
 }
 
 .projetos .btn-mostrar-mais-projetos.remove {
