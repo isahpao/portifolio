@@ -259,6 +259,8 @@
       width: 130px;
       padding: 10px;
       font-size: 14px;
+      position: relative;
+      top: 190px;
     }
   }
   
@@ -277,6 +279,12 @@
         padding: 30px;
         padding-bottom: 220px;
       }
+
+      .projetos .btn-mostrar-mais-projetos{
+        position: relative;
+        top: 280px;
+      }
+
       .logo {
         position: static;
       }
@@ -286,7 +294,7 @@
     }
     @media (max-width: 400px) {
       .projetos{
-        padding-bottom: 280px;
+        padding-bottom: 300px;
       }
       .projetos .projeto .informacoes-projeto {
         height: auto;
