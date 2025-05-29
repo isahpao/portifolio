@@ -280,11 +280,6 @@
         padding-bottom: 220px;
       }
 
-      .projetos .btn-mostrar-mais-projetos{
-        position: relative;
-        top: 280px;
-      }
-
       .logo {
         position: static;
       }
@@ -299,4 +294,11 @@
       .projetos .projeto .informacoes-projeto {
         height: auto;
     }
+     .projetos .btn-mostrar-mais-projetos{
+        width: 130px;
+        padding: 10px;
+        font-size: 14px;
+        position: relative;
+        top: 280px;
+      }
     }
