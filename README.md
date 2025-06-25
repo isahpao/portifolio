@@ -51,7 +51,7 @@ Para testar o projeto localmente, siga os passos abaixo:
 ### **1️⃣ Clone o repositório**
 
 ```bash
-git clone https://github.com/isahpao/portifolio-isabelah-campos
+git clone https://github.com/isahpao/portifolio
 
 ```
 
@@ -59,7 +59,7 @@ git clone https://github.com/isahpao/portifolio-isabelah-campos
 
 ```bash
 
-cd portifolio-isabelah-campos
+cd portifolio
 
 ```
 
